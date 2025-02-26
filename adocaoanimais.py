@@ -105,7 +105,7 @@ else:
             for v in voluntarios:
                 col1, col2, col3 = st.columns([3, 4, 1])
                 with col1:
-                    st.write(f"*{v['id']} - {v['nome']}* ({v['cpf']}) - {v['contato']} - {v['areaatuacao']}")
+                    st.write(f"{v['id']} - {v['nome']} ({v['cpf']}) - {v['contato']} - {v['areaatuacao']}")
                 with col2:
                     with st.expander("Editar"):
                         with st.form(key=f"form_edit_{v['id']}"):
